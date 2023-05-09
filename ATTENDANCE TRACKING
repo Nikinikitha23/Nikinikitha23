@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Attendance Tracking</title>
+	<style type="text/css">
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f2f2f2;
+		}
+
+		.container {
+			max-width: 600px;
+			margin: auto;
+			padding: 20px;
+			background-color: #fff;
+			box-shadow: 0 0 10px rgba(0,0,0,0.2);
+		}
+
+		h1 {
+			text-align: center;
+		}
+
+		table {
+			width: 100%;
+			border-collapse: collapse;
+			margin-top: 20px;
+		}
+
+		th, td {
+			padding: 10px;
+			text-align: center;
+			border: 1px solid #ddd;
+		}
+
+		th {
+			background-color: #f2f2f2;
+			font-weight: bold;
+		}
+
+		tr:nth-child(even) {
+			background-color: #f2f2f2;
+		}
+
+		.button {
+			background-color: #4CAF50;
+			color: #fff;
+			border: none;
+			padding: 10px 20px;
+			border-radius: 5px;
+			cursor: pointer;
+			font-size: 16px;
+			margin-top: 20px;
+		}
+
+		.button:hover {
+			background-color: #3e8e41;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Attendance Tracking</h1>
+		<table>
+			<tr>
+				<th>Name</th>
+				<th>Present</th>
+				<th>Absent</th>
+			</tr>
+			<tr>
+				<td>SAI NIKITHA</td>
+				<td><input type="checkbox"></td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>NIKITHA</td>
+				<td><input type="checkbox"></td>
+				<td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>DOLLY</td>
+				<td><input type="checkbox"></td>
+				<td><input type="checkbox"></td>
+			</tr>
+		</table>
+		<button class="button">Submit</button>
+	</div>
+</body>
+</html>
