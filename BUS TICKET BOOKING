@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bus Ticket Booking</title>
+	<style type="text/css">
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f2f2f2;
+		}
+
+		.container {
+			max-width: 600px;
+			margin: auto;
+			padding: 20px;
+			background-color: #fff;
+			box-shadow: 0 0 10px rgba(0,0,0,0.2);
+		}
+
+		h1 {
+			text-align: center;
+		}
+
+		form {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			margin-top: 20px;
+		}
+
+		label {
+			width: 100%;
+			margin-bottom: 10px;
+			font-weight: bold;
+		}
+
+		input[type="text"], select {
+			width: 48%;
+			padding: 10px;
+			border-radius: 5px;
+			border: none;
+			box-shadow: 0 0 5px rgba(0,0,0,0.2);
+			margin-bottom: 20px;
+		}
+
+		input[type="submit"] {
+			background-color: #4CAF50;
+			color: #fff;
+			border: none;
+			padding: 10px 20px;
+			border-radius: 5px;
+			cursor: pointer;
+			font-size: 16px;
+			margin-top: 20px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Bus Ticket Booking</h1>
+		<form>
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name" required>
+
+			<label for="email">Email:</label>
+			<input type="text" id="email" name="email" required>
+
+			<label for="phone">Phone Number:</label>
+			<input type="text" id="phone" name="phone" required>
+
+			<label for="from">From:</label>
+			<select id="from" name="from" required>
+				<option value="">Select a city</option>
+				<option value="new_york">New York</option>
+				<option value="los_angeles">Los Angeles</option>
+				<option value="chicago">Chicago</option>
+			</select>
+
+			<label for="to">To:</label>
+			<select id="to" name="to" required>
+				<option value="">Select a city</option>
+				<option value="san_francisco">San Francisco</option>
+				<option value="miami">Miami</option>
+				<option value="seattle">Seattle</option>
+			</select>
+
+			<label for="date">Date:</label>
+			<input type="text" id="date" name="date" required>
+
+			<label for="time">Time:</label>
+			<input type="text" id="time" name="time" required>
+
+			<input type="submit" value="Book Now">
+		</form>
+	</div>
+</body>
+</html>
